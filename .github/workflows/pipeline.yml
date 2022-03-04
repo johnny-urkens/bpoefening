@@ -18,6 +18,8 @@ jobs:
     - name: Build for Windows
       run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
     - name: Upload artifact - Windows
+    - name: show contents of the current directory
+      run: ls -lr
       uses: actions/upload-artifact@v1.0.0
       with:
         name: BPoefening
