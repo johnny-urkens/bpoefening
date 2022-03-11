@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: hello-weather
-        image: miverboven/grotetest:latest
+        image: miverboven/bpoefening:latest
         ports:
         - containerPort: 80
